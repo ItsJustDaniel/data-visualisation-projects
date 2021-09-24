@@ -1,0 +1,40 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav__link {
+  list-style-type: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+}
+
+.visData {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "data-visualisation",
+  "version": "1.0.0",
+  "description": "data visualisation projects",
+  "main": "Bar Chart.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "data",
+    "visualisation",
+    "freecodecamp"
+  ],
+  "author": "Daniel Li",
+  "license": "ISC"
+}
