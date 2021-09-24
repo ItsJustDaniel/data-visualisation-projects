@@ -83,8 +83,8 @@ Promise.all(files.map((url) => d3.json(url))).then(function (values) {
       .html(
         `${county.area_name}, ${county.state}: ${county.bachelorsOrHigher}%`
       )
-      .style("left", `${i.layerX + 55}px`)
-      .style("top", `${i.clientY + 100}px`)
+      .style("left", `${i.layerX + 100}px`)
+      .style("top", `${i.layerY + 100}px`)
       .attr("data-education", county.bachelorsOrHigher);
   };
   var mouseleave = function (d) {
