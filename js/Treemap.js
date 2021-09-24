@@ -79,7 +79,6 @@ const dataset = d3
 
     const mouseover = function (d) {
       tooltip.style("display", "block");
-      d3.select(this).style("opacity", 1);
     };
 
     const mousemove = (i, d) => {
@@ -88,14 +87,14 @@ const dataset = d3
         .html(
           `Name: ${d.data.name} <br>,Category: ${d.data.category}<br> Value ${d.data.value}`
         )
-        .style("left", `${i.layerX + 55}px`)
+        .style("left", `${i.layerX + 155}px`)
         .style("top", `${i.layerY + 100}px`)
         .attr("data-value", d.data.value);
     };
     const mouseleave = function (d) {
       tooltip.style("display", "none");
 
-      d3.select(this).style("stroke", "none").style("opacity", 1);
+      d3.select(this).style("opacity", 1);
     };
     //create treemap
 
@@ -168,6 +167,7 @@ const dataset = d3
         console.log(d);
         return color(d);
       });
+
     legend
       .selectAll("labels")
       .data(categories)
